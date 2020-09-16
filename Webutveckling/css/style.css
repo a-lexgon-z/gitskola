@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    background-image: url();
 }
 .container {
     display: flex;
@@ -15,13 +16,14 @@ body {
 }
 
 .thick {
-    background-color: black;
+    background-image: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/469890/3b3825ccf060dd685d7c0d1d405290ecc38239e1.jpg);
+    background-size: 100%;
+    background-position: bottom;
     width: 100%;
     height: 150px;
     display: flex;
     align-items: center;
     font-size: 60px;
-    margin-left: 5%;
 }
 
 .thicky {
