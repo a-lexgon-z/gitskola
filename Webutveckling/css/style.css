@@ -1,7 +1,15 @@
 body {
     background-color: black;
+    background-repeat: no-repeat;
     background-image: url();
+    background-size: 100%;
 }
+
+.bsmall {
+    background-image: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/203770/835d3ac801dd0343a120bf9586f777afbdb3c715.jpg);
+    background-size: 100%;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -15,9 +23,9 @@ body {
     bottom: 50%;
 }
 
-.thick {
-    background-image: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/469890/3b3825ccf060dd685d7c0d1d405290ecc38239e1.jpg);
-    background-size: 100%;
+.bar {
+    background-image: url(https://media0.giphy.com/media/2dnGHOAQt1tIziib5X/giphy.gif);
+    background-size: 75%;
     background-position: bottom;
     width: 100%;
     height: 150px;
@@ -26,22 +34,103 @@ body {
     font-size: 60px;
 }
 
-.thicky {
-    margin-left: 10%;
+.mig {
+    margin-left: 45%;
+    font-size: 50px;
+    background-image: url(https://fc06.deviantart.net/fs70/f/2013/076/5/2/_tutorial__creating_an_animated_light_pulse_in_ps_by_d_k0d3-d5ybir4.gif);
+    background-size: 300px;
+    width: 180px;
+    height: 65px;
+    background-position: top;
+    color: white;
+    text-shadow: 1px 1px gold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.kurs {
+    margin-left: 3%;
+    font-size: 45px;
+    background-image: url(https://fc06.deviantart.net/fs70/f/2013/076/5/2/_tutorial__creating_an_animated_light_pulse_in_ps_by_d_k0d3-d5ybir4.gif);
+    background-size: 300px;
+    width: 140px;
+    height: 65px;
+    background-position: top;
+    color: white;
+    text-shadow: 1px 1px gold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.intre {
+    margin-left: 3%;
+    font-size: 45px;
+    background-image: url(https://fc06.deviantart.net/fs70/f/2013/076/5/2/_tutorial__creating_an_animated_light_pulse_in_ps_by_d_k0d3-d5ybir4.gif);
+    background-size: 300px;
+    width: 160px;
+    height: 65px;
+    background-position: top;
+    color: white;
+    text-shadow: 1px 1px gold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.skola {
+    margin-left: 2%;
+    margin-right: 1%;
+    font-size: 45px;
+    background-image: url(https://fc06.deviantart.net/fs70/f/2013/076/5/2/_tutorial__creating_an_animated_light_pulse_in_ps_by_d_k0d3-d5ybir4.gif);
+    background-size: 300px;
+    width: 118px;
+    height: 65px;
+    background-position: top;
+    color: white;
+    text-shadow: 1px 1px gold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.icon {
+    padding-left: 5%;
+}
+
+h4 {
+    font-size: 30px;
+    padding-left: 45%;
+    padding-right: 30%;
+    padding-top: 2%;
+    font-style: oblique;
+    color: white;
+    font: large;
+}
+
+h3 {
+    font-size: 40px;
+    padding-left: 44%;
+    padding-right: 30%;
+    padding-top: 2%;
+    font-style: oblique;
+    color: white;
+    font: large;
+    align-items: center;
 }
 
 h2 {
     font-size: 60px;
-    padding-left: 37%;
+    padding-left: 35%;
     font-style: oblique;
+    color: white;
 }
 
 h1 {
     font-size: 30px;
-    padding-left: 34%;
+    padding-left: 32%;
     padding-right: 30%;
     padding-top: 2%;
     font-style: oblique;
+    color: white;
+    font: large;
 }
 
 .caesar {
@@ -51,13 +140,22 @@ h1 {
     font-size: 17px;
     padding-left: 30%;
     padding-right: 30%;
+    color: white;
 }
 
 .raid {
     font-family: cursive;
     font-style: italic;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 30%;
     padding-right: 30%;
+    color: white;
+}
+
+ul {
+    color: white;
+    font-size: 30px;
+    padding-left: 45%;
+    align-items: center;
 }
