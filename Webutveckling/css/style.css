@@ -95,6 +95,16 @@ body {
     padding-left: 5%;
 }
 
+h5 {
+    font-size: 30px;
+    padding-left: 46%;
+    padding-right: 30%;
+    padding-top: 2%;
+    font-style: oblique;
+    color: white;
+    font: large;
+}
+
 h4 {
     font-size: 30px;
     padding-left: 45%;
