@@ -64,8 +64,6 @@
 }
 
 h1 {
-    width: 625px;
-    border: 1px solid red;
     color: black;
     padding: 2px;
     font-size: 16px;
@@ -73,11 +71,8 @@ h1 {
 }
 
 .homep {
-    width: 625px;
-    border: 1px solid red;
     padding: 2px;
     margin: 0;
-    float: left;
     word-wrap: break-word;
     word-break: keep-all;
     color: black;
@@ -88,11 +83,8 @@ h1 {
 }
 
 .homep2 {
-    width: 625px;
-    border: 1px solid red;
     margin: 0;
     padding: 2px;
-    float: left;
     word-wrap: break-word;
     word-break: keep-all;
     color: black;
@@ -103,8 +95,6 @@ h1 {
 }
 
 h2 {
-    width: 625px;
-    border: 1px solid red;
     padding: 2px;
     color: black;
     font-size: 18px;
