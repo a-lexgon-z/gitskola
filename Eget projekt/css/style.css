@@ -1,0 +1,116 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 25px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: blueviolet;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgb(187, 184, 184);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.logo {
+    padding-left: 95mm;
+}
+
+h1 {
+    width: 625px;
+    border: 1px solid red;
+    color: black;
+    padding: 2px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.homep {
+    width: 625px;
+    border: 1px solid red;
+    padding: 2px;
+    margin: 0;
+    float: left;
+    word-wrap: break-word;
+    word-break: keep-all;
+    color: black;
+    justify-content: left;
+    align-items: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.homep2 {
+    width: 625px;
+    border: 1px solid red;
+    margin: 0;
+    padding: 2px;
+    float: left;
+    word-wrap: break-word;
+    word-break: keep-all;
+    color: black;
+    justify-content: left;
+    align-items: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+h2 {
+    width: 625px;
+    border: 1px solid red;
+    padding: 2px;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 h2 {
+    display: inline;
+}
