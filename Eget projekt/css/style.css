@@ -63,44 +63,11 @@
     padding-left: 95mm;
 }
 
-h1 {
-    color: black;
-    padding: 2px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+.head {
+  font-size: 10px;
+  background-color: silver;
 }
 
 .homep {
-    padding: 2px;
-    margin: 0;
-    word-wrap: break-word;
-    word-break: keep-all;
-    color: black;
-    justify-content: left;
-    align-items: inherit;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-}
-
-.homep2 {
-    margin: 0;
-    padding: 2px;
-    word-wrap: break-word;
-    word-break: keep-all;
-    color: black;
-    justify-content: left;
-    align-items: inherit;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-}
-
-h2 {
-    padding: 2px;
-    color: black;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 h2 {
-    display: inline;
+  font-size: 12px;
 }
