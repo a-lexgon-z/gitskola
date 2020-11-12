@@ -14,12 +14,12 @@ header {
 .container {
     display: flex;
 }
-
+/*flex behövs i containern inte i items*/
 .item {
     width: auto;
     height: auto;
     background-color: white;
-    flex-grow: 1;
+    flex: 1; /*flex flex-grow verkar vara samma*/
     text-align: center;
     background-color: lime;
     font-family: 'Courier New', Courier, monospace;
@@ -29,14 +29,14 @@ header {
 .item + .item {
     margin-left: 2%;
 }
-
+/*Ger avstånd mellan itemsen fungerar med flexbox*/
 .navbar {
     width: 100%;
     height: 50px;
     background-color: lime;
     display: flex;
 }
-
+/*Ny "container" krävs display flex*/
 .items {
     width: 20px;
     height: 10px;
@@ -60,13 +60,12 @@ header {
 
 a:link {
     text-decoration: none;
-    color: black;
 }
 
 a:visited {
     color: black;
 }
-
+/* De verkar inte fungera
 a:hover {
     text-decoration: red;
 }
@@ -74,7 +73,7 @@ a:hover {
 a:active {
     text-decoration: yellow;
 }
-
+Vet inte varför */
 .cart {
     flex-grow: 0.2;
     background-image:url(/Webutveckling/Flexbox/cart.png);
@@ -83,10 +82,4 @@ a:active {
     align-items: center;
     justify-content: center;
 }
-
-footer {
-    color: white;
-    position: relative;
-    text-align: center;
-    margin-top: 20%;
-}
+/*Dumt sätt att lägga in bilden på men den fungerar med flex*/
