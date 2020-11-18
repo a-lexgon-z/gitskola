@@ -1,0 +1,16 @@
+#clock {
+    color: black;
+    font-size: 200px;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url(https://media1.giphy.com/media/cmegx6SssTKmEFEcwj/giphy-downsized-large.gif);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+body {
+    background-color: black;
+}
