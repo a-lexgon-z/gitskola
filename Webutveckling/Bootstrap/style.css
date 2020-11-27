@@ -1,0 +1,56 @@
+* {
+    margin: 0 auto 0 auto;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #101216;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.404);
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 33;
+    max-width: auto;
+    text-align: center;
+    float: left;
+}
+
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: rgb(185, 185, 185);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover { text-shadow: 0 0 10px #ffffff; }
+.navbar a:hover {
+    color: white;
+}
+
+.active {
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+.pog .active {
+    background-color: black;
+    color: white;
+}
+
+.pog a:hover {
+    background-color: black;
+    color: white;
+}
