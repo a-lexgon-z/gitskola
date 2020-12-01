@@ -1,21 +1,42 @@
 body {
     margin: 0;
+    background-color: black;
 }
 
 .container {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
 }
+/*Skapade "borders" för texten så att den är centrerad*/
 
 h1, h2 {
+    color: white;
     text-align: center;
     justify-content: center;
 }
 
 .text {
-    color: rgb(red, green, blue);
+    color: rgb(189, 184, 184);
     font-size: 17px;
-    flex: 1;
-    text-shadow: 0 0.5px black;
 }
+
+.text + .text {
+    margin-left: 15%;
+}
+/*Till så att texten får en hover effect och inte en hel box
+när flex: 1 används*/
+
+.text:hover {
+    color: white;
+}
+
+.bild {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+/*Block centrerade den*/
