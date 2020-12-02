@@ -38,5 +38,17 @@ när flex: 1 används*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
+} /*Block centrerade den*/
+
+.container2 {
+    position: relative;
+    text-align: center;
 }
-/*Block centrerade den*/
+
+.intext {
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    top: 8px;
+}
+/*Fixa texten så att den blir centrerad och texten inte går utanför bilden*/
