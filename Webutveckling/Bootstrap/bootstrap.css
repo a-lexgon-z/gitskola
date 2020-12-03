@@ -79,11 +79,13 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   text-align: center;
   justify-content: center;
+  padding-bottom: 2%;
 }
 
-p {
+p /*PARAGRAPH HÄRRRRR*/{
   margin-top: 0;
   margin-bottom: 1rem;
+
 }
 
 abbr[title],
@@ -365,11 +367,11 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h2, .h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 h3, .h3 {
@@ -10268,12 +10270,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .text {
   color: rgb(189, 184, 184);
-  font-size: 17px;
+  font-size: 14px;
+  flex: 1;
+  list-style: none;
 }
 
-.text + .text {
-  margin-left: 15%;
-}
 .text:hover {
   color: white;
 }
