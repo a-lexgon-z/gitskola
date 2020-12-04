@@ -10282,14 +10282,21 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-.text {
+a {
   color: rgb(189, 184, 184);
   font-size: 14px;
   flex: 1;
   list-style: none;
+  text-decoration: none;
 }
 
-.text:hover {
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#top {
+  font-size: 17px;
   color: white;
 }
 
