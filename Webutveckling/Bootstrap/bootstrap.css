@@ -73,18 +73,31 @@ hr {
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   color: white;
   text-align: center;
   justify-content: center;
   padding-bottom: 2%;
+} /*Tog bort h2*/
+
+h2 /*egen h2*/ {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  color: white;
+  text-align: left;
+  padding-left: 21%;
 }
 
 p /*PARAGRAPH HÄRRRRR*/{
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top: 1;
+  margin-bottom: 3rem;
+  color: lightgrey;
+  text-align: left;
+  padding-right: 21%;
+  padding-left: 21%;
+  font-size: 15px;
 
 }
 
@@ -371,7 +384,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 h3, .h3 {
@@ -559,6 +572,7 @@ pre code {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding-bottom: 5%;
 }
 
 @media (min-width: 576px) {
