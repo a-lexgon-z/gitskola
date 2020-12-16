@@ -16,5 +16,3 @@ def blandaKort(lek):
     return rnd.shuffle(lek)
 
 kortlek = skapaKortlek()
-
-print(kortlek)
