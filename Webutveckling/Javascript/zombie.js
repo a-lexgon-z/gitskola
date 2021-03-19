@@ -1,6 +1,6 @@
 <script src="http://spelprogrammering.nu/simple.js">
 
-    var player = {x: 100, y:100, size: 5, xSpeed: 5, ySpeed: 0};
+    var player = {x: 100, y: 100, size: 5, xSpeed: 5, ySpeed: 0};
 
     function update()
 {
