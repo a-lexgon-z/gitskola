@@ -7,10 +7,13 @@
     <title>Zombie spel</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="poggers">
+    <header>PRESS [SPACE] TO ENABLE DRIP MODE</header>
     <script src="http://spelprogrammering.nu/simple.js">
 
         var zombies = [];
+        var timecount = 0
+        setInterval(function () { timecount += 1; }, 1000);
     
         var i = 0;
     
@@ -33,14 +36,23 @@
             {
                 var zombie = zombies[i];
     
-                picture(zombie.x, zombie.y, "lilslender.png");
+                picture(zombie.x, zombie.y, "dripslender.png");
 
                 if (keyboard.space) {
-                    picture(zombie.x, zombie.y, "dripslender.png");
                     document.body.style.backgroundImage = "url('https://i.ytimg.com/vi/WnKoEAwPK3A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDdxAEseRVzIEMBfjLCHWGefGUXvg')"
                     var audio = new Audio("drip.mp3");
                     audio.play();
-                    audio.volume = 0.02
+                    audio.volume = 1
+                }
+
+                if (keyboard.space) {
+                    var audios = new Audio("Jorge.mp3");
+                    audios.play();
+                }
+
+                if (keyboard.space) {
+                    var audioss = new Audio("caramell.mp3");
+                    audioss.play();
                 }
     
                 if (zombie.x < mouse.x)
@@ -56,7 +68,8 @@
                 if (distance(mouse, zombie) < 5)
                 {
                     stopUpdate();
-                    /*location.replace("over.html")*/
+                    location.replace("over.html")
+                    localStorage.setItem('time', timecount)
                 }
 
                 i += 1;

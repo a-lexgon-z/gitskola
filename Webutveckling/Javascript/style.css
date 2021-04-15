@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    background-image: url(https://static.wikia.nocookie.net/warrior-cats-a-new-dawn/images/c/cd/DF.gif/revision/latest?cb=20161007200428);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.poggers {
+    background-image: url(https://expo.vastarvet.se/wp-content/uploads/2019/05/silvana-amicone-778158-unsplash-1.jpg);
+}
+
+.pog {
+    background-image: url(https://i.kym-cdn.com/photos/images/newsfeed/000/349/923/d60.gif);
+}
+
+header {
+    color: black;
+    outline: white;
+    text-align: center;
+    font-size: 45px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25vh;
+    color: red;
+}
+
+.start {
+    text-align: center;
+    background-image: linear-gradient(purple, red);
+}
+
+h2 {
+    font-size: 15vh;
+    background-image: linear-gradient(red, gray);
+}
+
+a {
+    font-size: 40px;
+}
+
+.try, .main{
+    margin-right: 1%;
+    margin-left: 1%;
+    background-image: linear-gradient(red, gray);
+    background-size: contain;
+    text-decoration: none;
+}
+
+.Pog {
+    font-size: 100px;
+    text-decoration: none;
+}
+
+h3 {
+    background-image: linear-gradient(red, gray);
+    font-size: 25px;
+}
