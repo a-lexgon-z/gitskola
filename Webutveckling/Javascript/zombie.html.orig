@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>Document</title>
+    <script type="text/javascript">
+        function runProgram()
+        {
+            var shell = new ActiveXObject("WScript.Shell");                 
+            var appITunes = "\"D:\\Program Files\\Games\\Apex\\r5apex\" ";
+            shell.Run(apexLegends);
+        }        
+    </script>
+</head>
+<body>
+    <a href="javascript:runProgram()">Run program</a>
+</body>
+</html>
+<script src="http://spelprogrammering.nu/simple.js%22%3E">
+
+        var zombies = [];
+
+        var i = 0;
+
+=======
+    <title>Zombie spel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="poggers">
+    <header>PRESS [SPACE] TO ENABLE DRIP MODE</header>
+    <script src="http://spelprogrammering.nu/simple.js">
+
+        var zombies = [];
+        var timecount = 0
+        setInterval(function () { timecount += 1; }, 1000);
+    
+        var i = 0;
+    
+>>>>>>> c2228324ea93eb4c5694c8a9e31f4bb657c3ea02
+        while (i < 15)
+        {
+            zombies.push({x: random(totalWidth),
+                          y: random(totalHeight),
+                          speed: random(1,20)});
+<<<<<<< HEAD
+
+            i += 1;
+        }
+
+        function update()
+        {
+            clearScreen();
+
+            var i = 0;
+
+            while (i < 15)
+        {
+                var zombie = zombies[i];
+
+                picture(zombie.x, zombie.y, "http://spelprogrammering.nu/bilder/zombie.png");
+
+                if (keyboard.space)
+                 
+
+=======
+            
+            i += 1;
+        }
+    
+        function update()
+        {
+            clearScreen();
+    
+            var i = 0;
+    
+            while (i < 15)
+            {
+                var zombie = zombies[i];
+    
+                picture(zombie.x, zombie.y, "dripslender.png");
+
+                if (keyboard.space) {
+                    document.body.style.backgroundImage = "url('https://i.ytimg.com/vi/WnKoEAwPK3A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDdxAEseRVzIEMBfjLCHWGefGUXvg')"
+                    var audio = new Audio("drip.mp3");
+                    audio.play();
+                    audio.volume = 1
+                }
+
+                if (keyboard.space) {
+                    var audios = new Audio("Jorge.mp3");
+                    audios.play();
+                }
+
+                if (keyboard.space) {
+                    var audioss = new Audio("caramell.mp3");
+                    audioss.play();
+                }
+    
+>>>>>>> c2228324ea93eb4c5694c8a9e31f4bb657c3ea02
+                if (zombie.x < mouse.x)
+                 zombie.x += zombie.speed;
+                else
+                 zombie.x -= zombie.speed;
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> c2228324ea93eb4c5694c8a9e31f4bb657c3ea02
+                if (zombie.y < mouse.y)
+                 zombie.y += zombie.speed;
+                else
+                 zombie.y -= zombie.speed;
+<<<<<<< HEAD
+
+                if (distance(mouse, zombie) < 5)
+                {
+                    alert("Game over");
+                    stopUpdate();
+=======
+                
+                if (distance(mouse, zombie) < 5)
+                {
+                    stopUpdate();
+                    location.replace("over.html")
+                    localStorage.setItem('time', timecount)
+>>>>>>> c2228324ea93eb4c5694c8a9e31f4bb657c3ea02
+                }
+
+                i += 1;
+            }
+        }
+<<<<<<< HEAD
+
+</script>
+=======
+    /**/
+    </script>
+    
+</body>
+</html>
+>>>>>>> c2228324ea93eb4c5694c8a9e31f4bb657c3ea02
