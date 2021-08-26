@@ -1,0 +1,27 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightblue;
+  height: 25vh;
+  color: #72e972;
+}
+
+header button {
+  background: rgba(174, 212, 203, 0.712);
+}
+
+header button:hover {
+  background: #b945b9;
+}
+
+.contact button {
+  background: rgba(174, 212, 203, 0.712);
+}
+/*# sourceMappingURL=style.css.map */
