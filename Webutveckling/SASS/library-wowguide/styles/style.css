@@ -94,12 +94,25 @@ body {
 }
 
 .first-text {
-  font-size: 18px;
-  font-family: monospace;
+  font-size: 22px;
+  font-family: 'Courier New', Courier, monospace;
   position: absolute;
-  bottom: 20px;
-  color: #fbff00;
-  left: 20px;
+  color: #e5ff00;
+  width: 30vw;
+  left: 37vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 17vw;
+}
+
+.second-text {
+  font-size: 22px;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: #e5ff00;
+  width: 30vw;
+  left: 37vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 65vw;
 }
 
 img {

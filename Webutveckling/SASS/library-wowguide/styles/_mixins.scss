@@ -9,10 +9,14 @@
 }
 
 @mixin pictureText {
-    font-size: 18px;
-    font-family: monospace;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
     position: absolute;
-    bottom: 20px;
     color: $pictureColor;
-    left: 20px;
+    width: 30vw;
+    left: 37vw;
+    text-shadow: 0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
 }

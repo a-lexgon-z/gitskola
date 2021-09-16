@@ -91,6 +91,13 @@ body {
 
 .first-text {
     @include pictureText();
+    top: 17vw;
+    
+}
+
+.second-text {
+    @include pictureText();
+    top: 65vw;
 }
 
 img {
