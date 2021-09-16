@@ -1,0 +1,18 @@
+@mixin fontText {
+    font-size: $navbarSize;
+    font-family: $textfont;
+}
+
+@mixin navbarHover {
+    color: #f1ff2b;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@mixin pictureText {
+    font-size: 18px;
+    font-family: monospace;
+    position: absolute;
+    bottom: 20px;
+    color: $pictureColor;
+    left: 20px;
+}
