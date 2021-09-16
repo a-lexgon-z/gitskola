@@ -10,6 +10,12 @@ body {
     background-color: black;
 }
 
+.bossbody {
+    background-image: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 
 .navbar {
     overflow: hidden;
@@ -114,4 +120,10 @@ img {
 
 #topBtn:hover {
     background-color: rgb(99, 98, 98);
+}
+
+.mecanicsText {
+    @include mechanicsText();
+    top: 3vw;
+    left: 8vw;
 }

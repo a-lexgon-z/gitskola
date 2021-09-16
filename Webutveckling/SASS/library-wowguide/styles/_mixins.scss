@@ -20,3 +20,15 @@
     -0.07em 0 black,
     0 -0.07em black;
 }
+
+@mixin mechanicsText {
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    color: $pictureColor;
+    position: absolute;
+    width: 80vw;
+    text-shadow: 0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
+}

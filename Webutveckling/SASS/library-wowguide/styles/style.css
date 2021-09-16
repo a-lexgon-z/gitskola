@@ -126,6 +126,12 @@ body {
   background-color: black;
 }
 
+.bossbody {
+  background-image: url(./background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .navbar {
   overflow: hidden;
   width: 100%;
@@ -236,5 +242,16 @@ img {
 
 #topBtn:hover {
   background-color: #636262;
+}
+
+.mecanicsText {
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #e5ff00;
+  position: absolute;
+  width: 80vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 3vw;
+  left: 8vw;
 }
 /*# sourceMappingURL=style.css.map */
