@@ -1,5 +1,6 @@
 @import './variables';
 @import './mixins';
+@import './texts';
 
 /*TRY TO IMPLEMENT MIXINS*/
 /*NEED A TEXT VARIABLE*/
@@ -8,6 +9,7 @@ body {
     margin: 0;
     background-color: black;
 }
+
 
 .navbar {
     overflow: hidden;
@@ -87,17 +89,6 @@ body {
 .nmBtn:hover {
     @include navbarHover();
     @include fontText();
-}
-
-.first-text {
-    @include pictureText();
-    top: 17vw;
-    
-}
-
-.second-text {
-    @include pictureText();
-    top: 65vw;
 }
 
 img {

@@ -1,3 +1,124 @@
+.first-text {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: #e5ff00;
+  width: 50vw;
+  left: 24vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 22vw;
+}
+
+.second-text {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: #e5ff00;
+  width: 50vw;
+  left: 24vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 72vw;
+}
+
+.third-text {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: #e5ff00;
+  width: 50vw;
+  left: 24vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 122vw;
+}
+
+.fourth-text {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: #e5ff00;
+  width: 50vw;
+  left: 24vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 167vw;
+}
+
+.fifth-text {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: #e5ff00;
+  width: 50vw;
+  left: 24vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 222vw;
+}
+
+.sixth-text {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: #e5ff00;
+  width: 50vw;
+  left: 24vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 272vw;
+}
+
+.seventh-text {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: #e5ff00;
+  width: 50vw;
+  left: 24vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 322vw;
+}
+
+.eight-text {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: #e5ff00;
+  width: 50vw;
+  left: 24vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 372vw;
+}
+
+.ninth-text {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: #e5ff00;
+  width: 50vw;
+  left: 24vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 422vw;
+}
+
+.tenth-text {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: #e5ff00;
+  width: 50vw;
+  left: 24vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 472vw;
+}
+
+.eleventh-text {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: #e5ff00;
+  width: 50vw;
+  left: 24vw;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  top: 522vw;
+}
+
 /*TRY TO IMPLEMENT MIXINS*/
 /*NEED A TEXT VARIABLE*/
 body {
@@ -91,28 +212,6 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;
-}
-
-.first-text {
-  font-size: 22px;
-  font-family: 'Courier New', Courier, monospace;
-  position: absolute;
-  color: #e5ff00;
-  width: 30vw;
-  left: 37vw;
-  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-  top: 17vw;
-}
-
-.second-text {
-  font-size: 22px;
-  font-family: 'Courier New', Courier, monospace;
-  position: absolute;
-  color: #e5ff00;
-  width: 30vw;
-  left: 37vw;
-  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-  top: 65vw;
 }
 
 img {

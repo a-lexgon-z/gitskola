@@ -8,13 +8,13 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-@mixin pictureText {
-    font-size: 22px;
+@mixin bpictureText {
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
     color: $pictureColor;
-    width: 30vw;
-    left: 37vw;
+    width: 50vw;
+    left: 24vw;
     text-shadow: 0.07em 0 black,
     0 0.07em black,
     -0.07em 0 black,
