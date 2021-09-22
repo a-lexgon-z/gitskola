@@ -1,0 +1,53 @@
+/*Smaller screens*/
+@media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .nav-link {
+        justify-content: center;
+    }
+    main {
+        margin: 0;
+    }
+}
+
+/*Bigger screens*/
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+        &:hover {
+            width: 16rem;
+        }
+        &:hover .link-text {
+            display: inline;
+        }
+    }
+    #topBtn {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: $secondary-color;
+        color: $background-color;
+        cursor: pointer;
+        padding: 1rem;
+        border-radius: 2rem;
+        font-size: 22px;
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+    .icon {
+        width: 5rem;
+        height: 5rem;
+    }
+}

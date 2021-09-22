@@ -4,103 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>wowguide</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <!--MISSING ICON FOLDER-->
     <div class="navbar">
-        <div class="dropdown">
-            <button class="dropBtn">DUNGEON OVERIVEW</button>
-            <div class="dropdown-content">
-                <a href="./bossMec.html">BOSS MECHANICS</a>
-                <a href="./classMec.html">CLASS SPECIFIC MECHANICS</a>
-                <a href="./MModifiers.html">MYTHIC+ MODIFIERS</a>
-            </div>
-        </div>
-        <button class="nmBtn" onclick="location.href='Mrewards.html'">MYTHIC+ REWARDS</button>
-        <button class="nmBtn" onclick="location.href='Maffixes.html'">MYTHIC+ REWARDS</button>
-        <button class="nmBtn" onclick="location.href='routes.html'">TOP ROUTES</button>
-        <button class="nmBtn" onclick="location.href='leaderboard.html'">LEADERBOARD</button>
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="#" class="nav-link">
+                    <img src="./dungeonpics/Icon.png" class="icon">
+                    <span class="link-text">WoW Guide</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="./dungeonpics/classes.png" class="icon">
+                    <span class="link-text">Class specifics</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="./dungeonpics/boss.png" class="icon">
+                    <span class="link-text">Boss Mechanics</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                <img src="./dungeonpics/modifiers.jpg" class="icon">
+                <span class="link-text">Mythic modifiers</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                <img src="./dungeonpics/routes.png" class="icon">
+                <span class="link-text">Dungeon routes</span>
+                </a>
+            </li>
+        </ul>
     </div>
+
     <button onclick="topFunction()" id="topBtn" title="Top button">Scroll to top</button>
 
     <!--MISSING TEXT TO DESCRIBE THE DUNGEONS-->
-    <div class="image-grid">
-        <div class="first-text">Atal'Dazar is a max-level dungeon located in Zuldazar. It is available to Level 110 players on Normal difficulty and level 120 players on Heroic, Mythic, and Mythic+ difficulties.
-
-            This guide will outline strategies and important role-based responsibilities for each of the 4 bosses in Atal'Dazar, as well as some tips on particularly threatening trash mobs.
-            
-            When running this dungeon in Mythic+, additional affixes will be present on the enemies in the dungeon, affecting the way they behave.</div>
-        <img src="./dungeonpics/Atal.jpg">
-        <p class="second-text">Freehold is a max-level dungeon located in Tiragarde Sound. It is available to Level 110 Alliance players on Normal difficulty and level 120 players on Heroic, Mythic, and Mythic+ difficulties.
-
-            This guide will outline strategies and important role-based responsibilities for each of the 4 bosses in Freehold, as well as some tips on particularly threatening trash mobs.
-            
-            When running this dungeon in Mythic+, additional affixes will be present on the enemies in the dungeon, affecting the way they behave.</p>
-        <img src="./dungeonpics/freehold.jpg">
-        <p class="third-text">King's Rest is a max-level dungeon located in Zuldazar. It is available to Level 120 players on Heroic, Mythic and Mythic+ difficulties only.
-
-            This guide will outline strategies and important role-based responsibilities for each of the 4 bosses in King's Rest, as well as some tips on particularly threatening trash mobs.
-            
-            When running this dungeon in Mythic+, additional affixes will be present on the enemies in the dungeon, affecting the way they behave.</p>
-        <img src="./dungeonpics/kingsrest.jpg">
-        <p class="fourth-text">Operation: Mechagon is a max-level dungeon located on Mechagon. It is available to Level 120 players on Mythic difficulty only and is considered to be a megadungeon, similar to Legion's Return to Karazhan. Operation: Mechagon contains 8 bosses and has a weekly lockout.
-
-            This guide will outline strategies and important role-based responsibilities for each of the 8 bosses in Operation: Mechagon, how to activate the known Hard Mode encoutners, as well as some tips on particularly threatening trash mobs.
-            
-            In Patch 8.3, Heroic and Mythic+ difficulties will be added to Operation: Mechagon. For these difficulties, it will be split into two different instances. The official names are:
-            Operation: Mechagon - Junkyard - Gunker, Trixie & Naeno, King Gobbamak, HK-8
-            Operation: Mechagon - Workshop - Tussle Tonks, K.U.J.O., Head Machinist Sparkflame, King Mechagon
-            Heroic Mechagon is available in the Dungeon Finder, so if you haven't managed to experience this dungeon yet, you'll be able to queue for it in 8.3!</p>
-        <img src="./dungeonpics/mechagon.jpg">
-        <p class="fifth-text">The MOTHERLODE!! is a max-level dungeon located in Kezan. The dungeon entrance is located in Zuldazar. It is available to Level 115 Horde players on Normal difficulty and level 120 players on Heroic, Mythic, and Mythic+ difficulties.
-
-            This guide will outline strategies and important role-based responsibilities for each of the 4 bosses in The MOTHERLODE!!, as well as some tips on particularly threatening trash mobs.
-            
-            When running this dungeon in Mythic+, additional affixes will be present on the enemies in the dungeon, affecting the way they behave.</p>
-        <img src="./dungeonpics/motherlode.jpg">
-        <p class="sixth-text">
-            Siege of Boralus is a max-level dungeon located in Tiragarde Sound. It is available to Level 120 Alliance players on Heroic, Mythic and Mythic+ difficulties only. This guide will outline strategies and important role-based responsibilities for each of the 5 bosses in Siege of Boralus, as well as some tips on particularly threatening trash mobs.
-            
-            When running this dungeon in Mythic+, additional affixes will be present on the enemies in the dungeon, affecting the way they behave.
-            
-            This is the only dungeon in Battle for Azeroth in which the Alliance and Horde have different versions.
-            The differences are mainly cosmetic, with trash & the first boss having different names, however the route towards the first boss is also slightly different.
-            This route has the same trash enemies for both Alliance and Horde, and as the route is pretty linear we will not be covering this minor route change in this guide.
-            Any large differences between the versions have been noted throughout the guide.</p>
-        <img src="./dungeonpics/Sob.jpg">
-        <p class="seventh-text">Shrine of the Storm is a max-level dungeon located in Stormsong Valley. It is available to Level 110 Alliance players on Normal difficulty and level 120 players on Heroic, Mythic, and Mythic+ difficulties.
-
-            This guide will outline strategies and important role-based responsibilities for each of the 4 bosses in Shrine of the Storm, as well as some tips on particularly threatening trash mobs.
-            
-            When running this dungeon in Mythic+, additional affixes will be present on the enemies in the dungeon, affecting the way they behave.</p>
-        <img src="./dungeonpics/sots.jpg">
-        <p class="eight-text">
-            Tol Dagor is a max-level dungeon located in Tiragarde Sound. It is available to Level 115 Alliance players on Normal difficulty and level 120 players on Heroic, Mythic, and Mythic+ difficulties.
-            
-            This guide will outline strategies and important role-based responsibilities for each of the 4 bosses in Tol Dagor, as well as some tips on particularly threatening trash mobs.
-            
-            When running this dungeon in Mythic+, additional affixes will be present on the enemies in the dungeon, affecting the way they behave.</p>
-        <img src="./dungeonpics/Tol.jpg">
-        <p class="ninth-text">Temple of Sethraliss is a max-level dungeon located in Vol'dun. It is available to Level 110 Horde players on Normal difficulty and level 120 players on Heroic, Mythic, and Mythic+ difficulties.
-
-            This guide will outline strategies and important role-based responsibilities for each of the 4 bosses in Temple of Sethraliss, as well as some tips on particularly threatening trash mobs.
-            
-            When running this dungeon in Mythic+, additional affixes will be present on the enemies in the dungeon, affecting the way they behave.</p>
-        <img src="./dungeonpics/Tos.jpg">
-        <p class="tenth-text">The Underrot is a max-level dungeon located in Nazmir. It is available to Level 110 Horde players on Normal difficulty and level 120 players on Heroic, Mythic, and Mythic+ difficulties.
-
-            This guide will outline strategies and important role-based responsibilities for each of the 4 bosses in The Underrot, as well as some tips on particularly threatening trash mobs.
-            
-            When running this dungeon in Mythic+, additional affixes will be present on the enemies in the dungeon, affecting the way they behave.</p>
-        <img src="./dungeonpics/underrot.jpg">
-        <p class="eleventh-text">The Underrot is a max-level dungeon located in Nazmir. It is available to Level 110 Horde players on Normal difficulty and level 120 players on Heroic, Mythic, and Mythic+ difficulties.
-
-            This guide will outline strategies and important role-based responsibilities for each of the 4 bosses in The Underrot, as well as some tips on particularly threatening trash mobs.
-            
-            When running this dungeon in Mythic+, additional affixes will be present on the enemies in the dungeon, affecting the way they behave.</p>
-        <img src="./dungeonpics/waycrest.jpg">
-    </div>
+    <!--MISSING TEXT BOX-->
+    <main>
+        <div class="image-grid">
+            <div class="textbox">
+                <h1>Test</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minus quibusdam alias eligendi, aliquam aut consequuntur corporis iure tenetur itaque veniam mollitia iste necessitatibus in voluptas inventore doloremque laborum fugiat!</p>
+            </div>
+            <img src="./dungeonpics/Atal.jpg">
+            <img src="./dungeonpics/freehold.jpg">
+            <img src="./dungeonpics/kingsrest.jpg">
+            <img src="./dungeonpics/mechagon.jpg">
+            <img src="./dungeonpics/motherlode.jpg">
+            <img src="./dungeonpics/Sob.jpg">
+            <img src="./dungeonpics/sots.jpg">
+            <img src="./dungeonpics/Tol.jpg">
+            <img src="./dungeonpics/Tos.jpg">
+            <img src="./dungeonpics/underrot.jpg">
+            <img src="./dungeonpics/waycrest.jpg">
+        </div>
+    </main>
 <script src="java.js"></script>
 </body>
 </html>

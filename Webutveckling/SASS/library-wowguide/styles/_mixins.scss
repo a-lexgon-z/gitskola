@@ -1,34 +1,9 @@
 @mixin fontText {
-    font-size: $navbarSize;
-    font-family: $textfont;
+    font-size: $fontStyle;
+    font-family: $fontFamily;
 }
 
-@mixin navbarHover {
-    color: #f1ff2b;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-@mixin bpictureText {
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
-    position: absolute;
-    color: $pictureColor;
-    width: 50vw;
-    left: 24vw;
-    text-shadow: 0.07em 0 black,
-    0 0.07em black,
-    -0.07em 0 black,
-    0 -0.07em black;
-}
-
-@mixin mechanicsText {
-    font-size: 14px;
-    font-family: 'Courier New', Courier, monospace;
-    color: $pictureColor;
-    position: absolute;
-    width: 80vw;
-    text-shadow: 0.07em 0 black,
-    0 0.07em black,
-    -0.07em 0 black,
-    0 -0.07em black;
+@mixin PadMarg {
+    padding: 0;
+    margin: 0;
 }
