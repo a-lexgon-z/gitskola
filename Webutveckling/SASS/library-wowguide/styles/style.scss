@@ -37,6 +37,11 @@ body {
     @include imgSize();
 }
 
+img {
+    @extend .nav-item;
+    height: auto;
+}
+
 .nav-link {
     @include flexCenter();
 
@@ -70,11 +75,6 @@ body {
 main {
     margin-left: 5rem;
     color: $primary-color;
-}
-
-img {
-    @include imgSize();
-    height: auto;
 }
 
 h1 {
