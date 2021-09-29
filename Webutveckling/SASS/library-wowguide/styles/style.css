@@ -97,8 +97,12 @@ body::-webkit-scrollbar-thumb {
           flex-direction: column;
 }
 
-.nav-item {
+.nav-item, img {
   width: 100%;
+}
+
+img {
+  height: auto;
 }
 
 .nav-link {
@@ -142,11 +146,6 @@ body::-webkit-scrollbar-thumb {
 main {
   margin-left: 5rem;
   color: #f5a716;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 
 h1 {
