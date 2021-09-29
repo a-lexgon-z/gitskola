@@ -27,24 +27,9 @@
         }
     }
     #topBtn {
-        position: fixed;
-        bottom: 1rem;
-        right: 1rem;
-        z-index: 99;
-        border: none;
-        outline: none;
-        background-color: $secondary-color;
-        color: $background-color;
-        cursor: pointer;
-        padding: 1rem;
-        border-radius: 2rem;
-        font-size: 22px;
+        @include topBtn();
         &:hover {
             background-color: $primary-color;
         }
-    }
-    .icon {
-        width: 5rem;
-        height: 5rem;
     }
 }

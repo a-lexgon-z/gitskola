@@ -2,16 +2,14 @@
 @import './mixins';
 @import './responsive';
 
-/*TRY TO IMPLEMENT MIXINS*/
+
 :root {
     @include fontText();
 }
 
 body {
     @include PadMarg();
-
-    color: $secondary-color;
-    background-color: $background-color;
+    @include bodyColor();
     &::-webkit-scrollbar {
         width: 0.25rem;
     }
@@ -24,30 +22,24 @@ body {
 }
 
 .navbar {
-    position: fixed;
-    background-color: black;
-    transition: 200ms ease;
+    @include navbarTransition();
 }
 
 .navbar-nav {
     @include PadMarg();
+    @include flexCenter();
 
     list-style: none;
-    display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .nav-item {
-    width: 100%;
-    &:last-child {
-        margin-top: auto;
-    }
+    @include imgSize();
 }
 
 .nav-link {
-    display: flex;
-    align-items: center;
+    @include flexCenter();
+
     height: 5rem;
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
@@ -65,6 +57,7 @@ body {
 }
 
 .logo {
+    @include imgSize();
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -72,7 +65,6 @@ body {
     color: $primary-color;
     background: black;
     letter-spacing: 0.3ch;
-    width: 100%;
 }
 
 main {
@@ -81,7 +73,7 @@ main {
 }
 
 img {
-    width: 100%;
+    @include imgSize();
     height: auto;
 }
 
@@ -96,7 +88,7 @@ p {
     line-height: 1.8rem;
 }
 
-.textpic {
-    width: 50rem;
-    height: 50rem;
+.icon {
+    width: 4rem;
+    height: 4rem;
 }

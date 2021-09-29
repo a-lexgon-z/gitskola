@@ -48,13 +48,8 @@
   #topBtn:hover {
     background-color: #f5a716;
   }
-  .icon {
-    width: 5rem;
-    height: 5rem;
-  }
 }
 
-/*TRY TO IMPLEMENT MIXINS*/
 :root {
   font-size: 16px;
   font-family: "Georgia";
@@ -89,25 +84,21 @@ body::-webkit-scrollbar-thumb {
 .navbar-nav {
   padding: 0;
   margin: 0;
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .nav-item {
   width: 100%;
-}
-
-.nav-item:last-child {
-  margin-top: auto;
 }
 
 .nav-link {
@@ -138,6 +129,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo {
+  width: 100%;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -145,7 +137,6 @@ body::-webkit-scrollbar-thumb {
   color: #f5a716;
   background: black;
   letter-spacing: 0.3ch;
-  width: 100%;
 }
 
 main {
@@ -169,8 +160,8 @@ p {
   line-height: 1.8rem;
 }
 
-.textpic {
-  width: 50rem;
-  height: 50rem;
+.icon {
+  width: 4rem;
+  height: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
