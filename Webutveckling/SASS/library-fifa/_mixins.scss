@@ -2,38 +2,42 @@
     justify-content: $selection;
     text-align: center;
     background: $background;
-}
+}   /*Den här centrerar hela sidan och texterna samt ger den
+ en backgrundsfärg*/
 
 @mixin flexcenter($direction) {
     display: flex;
     flex-direction: $direction;
-}
+} /*Jag använde mig av display flex så att jag skulle kunna
+välja vilket håll texten skrivs ut i*/
 
 @mixin bodyText($color, $size) {
     font-family: $bodyStyle;
     color: $color;
     font-size: $size;
     text-shadow: white 0.4px 0.35px 0.75px;
-}
+} /*Strukturerar main body texten, lägger till färg och storlek
+samt en text shadow för att tydligare kunna läsa det*/
 
 @mixin headerText {
     font-family: $headerStyle;
     color: $headerColor;
     font-size: 36px;
-}
+} /*Använde mig av en annan mixin för att kunna redigera headers*/
 
 @mixin classSize {
     width: 100%;
     height: auto;
     background-color: $backColor;
-}
+} /*Här definierar jag en box runt headers och text*/
 
 @mixin spaceRemove {
     margin: 0;
     padding: 0;
-}
+} /*Tar bort space-n mellan sidan och boxarna & texten*/
 
 @mixin textBox {
     padding-left: 25%;
     padding-right: 25%;
-}
+} /*Ändrar så att texten flöder i mitten genom att skapa gaps
+från vänster och höger*/

@@ -1,6 +1,8 @@
 @import './mixins';
 @import './variables';
 
+/*Jag har bara importat generalla mixins i den här filen*/
+
 body {
     @include bodyStruction($backgroundColor, center);
     @include spaceRemove();
@@ -14,7 +16,8 @@ body {
 .bodytop {
     @include classSize();
 }
-
+/*Extends kopierar kod från andra klasser så att det blir
+generellt mindre kod*/
 .middle {
     @extend .top;
 }
