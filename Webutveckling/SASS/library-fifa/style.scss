@@ -1,0 +1,44 @@
+@import './mixins';
+@import './variables';
+
+body {
+    @include bodyStruction($backgroundColor, center);
+    @include spaceRemove();
+}
+
+.top {
+    @include headerText();
+    @include spaceRemove();
+}
+
+.bodytop {
+    @include classSize();
+}
+
+.middle {
+    @extend .top;
+}
+
+.bodymiddle {
+    @extend .bodytop;
+}
+
+.bottom {
+    @extend .top;
+}
+
+.bodybottom {
+    @extend .bodytop;
+}
+
+p {
+    @include bodyText($textColor, 24px);
+    @include flexcenter(left);
+    @include textBox();
+}
+
+footer {
+    @include flexcenter(column);
+    @include textBox();
+    @include bodyText(rgba(255, 255, 255, 0.5), 14px);
+}

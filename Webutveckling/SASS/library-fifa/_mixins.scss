@@ -1,0 +1,39 @@
+@mixin bodyStruction($background, $selection) {
+    justify-content: $selection;
+    text-align: center;
+    background: $background;
+}
+
+@mixin flexcenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin bodyText($color, $size) {
+    font-family: $bodyStyle;
+    color: $color;
+    font-size: $size;
+    text-shadow: white 0.4px 0.35px 0.75px;
+}
+
+@mixin headerText {
+    font-family: $headerStyle;
+    color: $headerColor;
+    font-size: 36px;
+}
+
+@mixin classSize {
+    width: 100%;
+    height: auto;
+    background-color: $backColor;
+}
+
+@mixin spaceRemove {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin textBox {
+    padding-left: 25%;
+    padding-right: 25%;
+}
