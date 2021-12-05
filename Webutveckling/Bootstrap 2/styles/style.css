@@ -1,29 +1,3 @@
-#cookiePopup {
-  background: white;
-  width: 25%;
-  position: fixed;
-  left: 10px;
-  bottom: 20px;
-  -webkit-box-shadow: 0px 0px 15px #cccccc;
-          box-shadow: 0px 0px 15px #cccccc;
-  padding: 5px 10px;
-}
-
-#cookiePopup p {
-  text-align: left;
-  font-size: 12px;
-  color: #4e4e4e;
-}
-
-#cookiePopup button {
-  width: 25%;
-  border: navajowhite;
-  background: #097fb7;
-  padding: 5px;
-  border-radius: 10px;
-  color: white;
-}
-
 .carousel-item {
   height: 32rem;
   background: #000;
@@ -31,8 +5,16 @@
   position: relative;
 }
 
+
 .container {
   position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+
+.container2 {
   bottom: 0;
   left: 0;
   right: 0;
@@ -51,12 +33,23 @@
   opacity: 0.5;
 }
 
+
 h2 {
   color: white;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
 }
+
+h3 {
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 36px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 
 /* Create four equal columns that sits next to each other */
 .column {
@@ -65,17 +58,11 @@ h2 {
   padding: 0 4px;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
 .column video {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   height: 250px;
 }
 
@@ -111,98 +98,77 @@ h2 {
   background: #555;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+/* Create three columns of equal width */
+.columns2 {
+  margin-top: 2vh;
+  box-sizing: border-box;
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
 
-.pricing-table{
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  color: black;
   background-color: #eee;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
 
-.pricing-table .block-heading {
-  padding-top: 50px;
-  margin-bottom: 40px;
-  text-align: center; 
-}
-
-.pricing-table .block-heading h2 {
-  color: #3b99e0;
-}
-
-.pricing-table .block-heading p {
+/* The "Sign Up" button */
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
   text-align: center;
-  max-width: 420px;
-  margin: auto;
-  opacity: 0.7; 
-}
-
-.pricing-table .heading {
-  text-align: center;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-}
-
-.pricing-table .item {
-  background-color: #ffffff;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
-  border-top: 2px solid #5ea4f3;
-  padding: 30px;
-  overflow: hidden;
-  position: relative; 
-}
-
-.pricing-table .col-md-5:not(:last-child) .item {
-  margin-bottom: 30px; 
-}
-
-.pricing-table .item button {
-  font-weight: 600; 
-}
-
-.pricing-table .ribbon {
-  width: 160px;
-  height: 32px;
-  font-size: 12px;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;
-  box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);
-  background: #4dbe3b;
-  transform: rotate(45deg);
-  position: absolute;
-  right: -42px;
-  top: 20px;
-  padding-top: 7px; 
-}
-
-.pricing-table .item p {
-  text-align: center;
-  margin-top: 20px;
-  opacity: 0.7; 
-}
-
-.pricing-table .features .feature {
-  font-weight: 600; }
-
-.pricing-table .features h4 {
-  text-align: center;
+  text-decoration: none;
   font-size: 18px;
-  padding: 5px; 
 }
 
-.pricing-table .price h4 {
-  margin: 15px 0;
-  font-size: 45px;
-  text-align: center;
-  color: #2288f9; 
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+  .button {
+    padding: 3%;
+  }
 }
 
-.pricing-table .buy-now button {
-  text-align: center;
-  margin: auto;
-  font-weight: 600;
-  padding: 9px 0; 
+li {
+  color: white;
 }
 
-.pricetext {
+p {
   color: white;
 }

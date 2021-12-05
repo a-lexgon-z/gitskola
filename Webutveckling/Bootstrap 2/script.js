@@ -1,5 +1,3 @@
-
-
 document.querySelectorAll('.videoPreview').forEach(function(vid) {
   vid.onmouseover = function() {
     this.play();
