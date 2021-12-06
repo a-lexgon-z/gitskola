@@ -6,3 +6,5 @@ document.querySelectorAll('.videoPreview').forEach(function(vid) {
     this.load(); // stop and show poster
   }
 })
+
+//Javascript för att kunna hovera över bilderna och få trailern spelad
