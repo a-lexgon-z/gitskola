@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/bootstrap.css">
@@ -11,6 +10,7 @@
 
     </head>
       <body>
+        <!--Simpel navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">BuffaloTime</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,14 +18,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">MOVIES / SERIES<span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="page1.html">SUBSCRIPTIONS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">SIGN IN / SIGN UP</a>
+                  <a class="nav-link" href="./page2.html">SIGN IN / SIGN UP</a>
                 </li>
               </ul>
               <span class="navbar-text">
@@ -33,7 +30,9 @@
               </span>
             </div>
           </nav>
+          <!--Simpel navbar-->
 
+          <!--Själva carouselen skapas här och säger hur många slides det ska finnas-->
           <div id="myCarousel" class="carousel slide carousel-fade"
           data-ride="carousel">
             <ol class="carousel-indicators">
@@ -42,6 +41,7 @@
               <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
 
+            <!--Carousel innehållet med timers, headers, text och en button som länkar till trailerna-->
             <div class="carousel-inner">
               <div class="carousel-item active" data-interval="3000">
                 <div class="overlay-image" style="background-image:url(./Pictures/Dune.jpg)"></div>
@@ -74,6 +74,7 @@
               </div>
             </div>
 
+            <!--Nästa och tillbaka knappar för carouselen-->
             </div>
             <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
               <span class="sr-only">Previous</span>
@@ -85,69 +86,45 @@
             </a>
           </div>
 
+          <!--Underrubriker med en poster på filmen samt en function tillsammans med javascript att visa trailern när man hoverar över den>
+          Finns även en volym inställning för att inte spränga öronen och lägga samma volym på alla-->
           <div class="row">
             <div class="column">
               <h2>UPCOMING MOVIES</h2>
-              <video class="videoPreview" src="./videos/SPIDER-MAN - NO WAY HOME - Official Trailer (HD).mp4" poster="./Pictures/spidermannowayhome.jpg">Your browser does not support the video tag.</video>
-              <video class="videoPreview" src="./videos/A JOURNAL FOR JORDAN - Teaser Trailer (HD) _ Exclusively In Theaters Christmas.mp4" poster="./Pictures/ajournalforjordan.jpg">Your browser does not support the video tag.</video>
-              <video class="videoPreview" src="./videos/Scream _ Official Trailer (2022 Movie).mp4" poster="./Pictures/Scream.jpg">Your browser does not support the video tag.</video>
+              <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/SPIDER-MAN - NO WAY HOME - Official Trailer (HD).mp4" poster="./Pictures/spidermannowayhome.jpg">Your browser does not support the video tag.</video>
+              <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/A JOURNAL FOR JORDAN - Teaser Trailer (HD) _ Exclusively In Theaters Christmas.mp4" poster="./Pictures/ajournalforjordan.jpg">Your browser does not support the video tag.</video>
+              <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/Scream _ Official Trailer (2022 Movie).mp4" poster="./Pictures/Scream.jpg">Your browser does not support the video tag.</video>
             </div>
             <div class="column">
               <h2>NEWEST RELEASE</h2>
-              <video class="videoPreview" src="./videos/True Story _ Official Trailer _ Netflix.mp4" poster="./Pictures/truestory.jpg">Your browser does not support the video tag.</video>
-              <video class="videoPreview" src="./videos/RED NOTICE _ Official Trailer _ Netflix.mp4" poster="./Pictures/rednotice.jpg">Your browser does not support the video tag.</video>
-              <video class="videoPreview" src="./videos/Marvel Studios’ Shang-Chi and the Legend of the Ten Rings _ Official Trailer.mp4" poster="./Pictures/shangchi.jpg">Your browser does not support the video tag.</video>
+              <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/True Story _ Official Trailer _ Netflix.mp4" poster="./Pictures/truestory.jpg">Your browser does not support the video tag.</video>
+              <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/RED NOTICE _ Official Trailer _ Netflix.mp4" poster="./Pictures/rednotice.jpg">Your browser does not support the video tag.</video>
+              <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/Marvel Studios’ Shang-Chi and the Legend of the Ten Rings _ Official Trailer.mp4" poster="./Pictures/shangchi.jpg">Your browser does not support the video tag.</video>
               </div>
               <div class="column">
                 <h2>POPULAR MOVIES</h2>
-                <video class="videoPreview" src="./videos/Marvel Studios’ Eternals _ Official Teaser.mp4" poster="./Pictures/eternals.jpg">Your browser does not support the video tag.</video>
-                <video class="videoPreview" src="./videos/NO TIME TO DIE Trailer – In Cinemas October 2021..mp4" poster="./Pictures/notimetodie.jpg">Your browser does not support the video tag.</video>
-                <video class="videoPreview" src="./videos/GHOSTBUSTERS - AFTERLIFE - Official Trailer (HD).mp4" poster="./Pictures/ghostbusters.jpg">Your browser does not support the video tag.</video>
+                <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/Marvel Studios’ Eternals _ Official Teaser.mp4" poster="./Pictures/eternals.jpg">Your browser does not support the video tag.</video>
+                <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/NO TIME TO DIE Trailer – In Cinemas October 2021..mp4" poster="./Pictures/notimetodie.jpg">Your browser does not support the video tag.</video>
+                <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/GHOSTBUSTERS - AFTERLIFE - Official Trailer (HD).mp4" poster="./Pictures/ghostbusters.jpg">Your browser does not support the video tag.</video>
               </div>
               <div class="column">
                 <h2>POPULAR SERIES</h2>
-                <video class="videoPreview" src="./videos/Squid Game _ Official Trailer _ Netflix.mp4" poster="./Pictures/squidgame.jpg">Your browser does not support the video tag.</video>
-                <video class="videoPreview" src="./videos/Peaky Blinders _ Official Season 6 Teaser Trailer _ Netflix.mp4" poster="./Pictures/peakyblinders.jpg">Your browser does not support the video tag.</video>
-                <video class="videoPreview" src="./videos/Big Mouth _ Season 5 Official Trailer _ Netflix.mp4" poster="./Pictures/bigmouth.jpg">Your browser does not support the video tag.</video>
+                <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/Squid Game _ Official Trailer _ Netflix.mp4" poster="./Pictures/squidgame.jpg">Your browser does not support the video tag.</video>
+                <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/Peaky Blinders _ Official Season 6 Teaser Trailer _ Netflix.mp4" poster="./Pictures/peakyblinders.jpg">Your browser does not support the video tag.</video>
+                <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/Big Mouth _ Season 5 Official Trailer _ Netflix.mp4" poster="./Pictures/bigmouth.jpg">Your browser does not support the video tag.</video>
               </div>
             </div>
 
-          <footer class="bg-dark text-center text-white">
-              <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-          
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-          
-                <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                  ><i class="fab fa-google"></i
-                ></a>
-          
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-          
-                <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                  ><i class="fab fa-btc"></i
-                ></a>
-          
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                  ><i class="fas fa-blind"></i
-                ></a>
-              </section>
-          </footer>
+            <!--Enkel footer med en copyright tag och länk som leder upp till sidan-->
+            <footer class="page-footer font-small cyan darken-3">
+              <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="./page1.html"> BuffaloTime</a>
+              </div>
+            </footer>
 
+
+            <!--javascript för olika funktioner som en dropdown menu för responsive navbar-->
         <script src="./script.js"></script>
-        <script src="https://kit.fontawesome.com/6eed1a9ef4.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./styles/bootstrap.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+	<!--Simpel navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">BuffaloTime</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,14 +16,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">MOVIES / SERIES<span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="page1.html">SUBSCRIPTIONS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SIGN IN / SIGN UP</a>
+              <a class="nav-link" href="./page2.html">SIGN IN / SIGN UP</a>
             </li>
           </ul>
           <span class="navbar-text">
@@ -31,68 +28,75 @@
           </span>
         </div>
       </nav>
+	  <!--Simpel navbar -->
 
-      <section class="pricing-table">
-			<div class="container">
-				<div class="block-heading">
-					<h2>Our Pricing</h2>
-					<p class="pricetext">Just a simple click away from watching your favourite movies and shows! BuffaloTime offers you all movies across all platforms for only a small subscription!</p>
-				</div>
-				<div class="row justify-content-md-center">
-					<div class="col-md-5 col-lg-4">
-						<div class="item">
-							<div class="heading">
-								<h3>STANDARD</h3>
-							</div>
-							<p>BuffaloTime Standard pack</p>
-							<div class="features">
-								<h4><span class="feature">Server Quality</span> : <span class="value">Standard</span></h4>
-								<h4><span class="feature">Duration</span> : <span class="value">30 Days</span></h4>
-								<h4><span class="feature">Upcoming movies</span> : <span class="value">none</span></h4>
-							</div>
-							<div class="price">
-								<h4>$9.99/montly</h4>
-							</div>
-							<button class="btn btn-block btn-outline-primary" type="submit">BUY NOW</button>
-						</div>
-					</div>
-					<div class="col-md-5 col-lg-4">
-						<div class="item">
-							<div class="ribbon">Best Value</div>
-							<div class="heading">
-								<h3>PRO</h3>
-							</div>
-							<p>BuffaloTime Pro pack</p>
-							<div class="features">
-								<h4><span class="feature">Server Quality</span> : <span class="value">PRO</span></h4>
-								<h4><span class="feature">Duration</span> : <span class="value">30 days</span></h4>
-								<h4><span class="feature">Upcoming movies</span> : <span class="value">weekly</span></h4>
-							</div>
-							<div class="price">
-								<h4>$14,99/montly</h4>
-							</div>
-							<button class="btn btn-block btn-primary" type="submit">BUY NOW</button>
-						</div>
-					</div>
-					<div class="col-md-5 col-lg-4">
-						<div class="item">
-							<div class="heading">
-								<h3>PREMIUM</h3>
-							</div>
-							<p>BuffaloTime Premium pack</p>
-							<div class="features">
-								<h4><span class="feature">Server Quality</span> : <span class="value">PREMIUM</span></h4>
-								<h4><span class="feature">Duration</span> : <span class="value">30 days</span></h4>
-								<h4><span class="feature">Upcoming movies</span> : <span class="value">montly</span></h4>
-							</div>
-							<div class="price">
-								<h4>$20,99/montly</h4>
-							</div>
-							<button class="btn btn-block btn-outline-primary" type="submit">BUY NOW</button>
-						</div>
-					</div>
-				</div>
+	  <!--Tre listor med lite information om sidan-->
+	  <div class="columns2">
+		<ul class="price">
+		  <li class="header">Daily</li>
+		  <li class="grey">$ 1.99 / daily</li>
+		  <li>Quality : 480-720p</li>
+		  <li>Live support : NO</li>
+		  <li>Profiles : 1</li>
+		  <li>Watch time : 1h 30min</li>
+		  <li class="grey"><a href="#" class="button">Sign Up</a></li>
+		</ul>
+	  </div>
+	  <div class="columns2">
+		<ul class="price">
+		  <li class="header">Montly</li>
+		  <li class="grey">$ 49,99 / montly</li>
+		  <li>Quality : 1080p</li>
+		  <li>Live support : YES</li>
+		  <li>Profiles : 3</li>
+		  <li>Watch time : 45h</li>
+		  <li class="grey"><a href="#" class="button">Sign Up</a></li>
+		</ul>
+	  </div>
+	  <div class="columns2">
+		<ul class="price">
+		  <li class="header">Yearly</li>
+		  <li class="grey">$ 569,99 / year</li>
+		  <li>Quality : 4k</li>
+		  <li>Live Support : YES</li>
+		  <li>Profiles : 5</li>
+		  <li>Watch time : 540h</li>
+		  <li class="grey"><a href="#" class="button">Sign Up</a></li>
+		</ul>
+	  </div>
+
+	  <!--En liten about us / our goal footer med en copyright text längst ner-->
+	  <footer class="bg-light text-center text-lg-start">
+		<div class="container p-4">
+		  <div class="row">
+			<div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+			  <h5 class="text-uppercase">ABOUT US</h5>
+			  <p>
+				BuffaloTime is a subscription based movie/series site runned by a small developer team. We've been operating
+				since 2021 and have successfully satisfied the majority of our customers during this short amount of time.
+				It's simple buy the subscription you'd like and start watching your favourite shows!
+			  </p>
 			</div>
-		</section>
+			<div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+			  <h5 class="text-uppercase">OUR GOAL</h5>
+			  <p>
+				Have you ever gotten tired your favourite movie site haven't had a movie you'd like to watch?
+				BuffaloTime fixes exactly that problem for you! Netflix/HBO and other streaming platforms all in one avaliable platform.
+				By subscribing to our site you help us provide entertainment for you, so what are you waiting for?
+			  </p>
+			</div>
+		  </div>
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		  	© 2020 Copyright:
+		  	<a href="./index.html"> BuffaloTime</a>
+		</div>
+		</div>
+	  </footer>
+
+	  <!--Javascript för att få en dropdown menu på mobilen-->
+	  <script src="./script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

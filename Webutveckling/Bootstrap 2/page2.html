@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/bootstrap.css">
+        <link rel="stylesheet" href="./styles/style.css">
+
+    </head>
+      <body>
+        <!--Simpel navbar. Finns även en ny länk på navbaren som tar en till filmerna-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">BuffaloTime</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./page3.html">MOVIES / SERIES<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">LOGOUT</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                This website is sponsored by Betflix
+              </span>
+            </div>
+          </nav>
+          <!--Simpel navbar -->
+
+          <!--Samma carousel som på index.html förutom att här står det watch now istället för watch trailer eftersom man ska vara "inloggad"-->
+          <div id="myCarousel" class="carousel slide carousel-fade"
+          data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="3000">
+                <div class="overlay-image" style="background-image:url(./Pictures/Dune.jpg)"></div>
+                <div class="container">
+                  <h1>Dune</h1>     
+                  <p>A mythic and emotionally charged hero's journey, "Dune" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.—Warner Bros.</p>
+                  <a href="https://www.youtube.com/watch?v=n9xhJrPXop4" class="btn btn-lg btn-primary">
+                    Watch now
+                  </a>         
+                </div>
+              </div>
+                <div class="carousel-item" data-interval="3000">
+                  <div class="overlay-image" style="background-image:url(./Pictures/Arcane.jpg)"></div>
+                  <div class="container">
+                  <h1>Arcane</h1>     
+                  <p>TThe delicate balance between the rich city of Piltover and the seedy underbelly of Zaun. Tensions between these city-states boil over with the creation of hextech a way for any person to control magical energy in Piltover, and in Zaun, a new drug called shimmer transforms humans into monsters. The rivalry between the cities splits families and friends as Arcane brings life to the relationships that shape some of League of Legends' famous champions including Vi, Jinx, Caitlyn, Jayce and Viktor.</p>
+                  <a href="https://www.youtube.com/watch?v=4Ps6nV4wiCE&ab_channel=LeagueofLegends" class="btn btn-lg btn-primary">
+                    Watch now
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-interval="3000">
+                <div class="overlay-image" style="background-image:url(./Pictures/venom.jpg)"></div>
+                <div class="container">
+                <h1>Venom: Let There Be Carnage</h1>     
+                <p>Eddie Brock struggles to adjust to his new life as the host of the alien symbiote Venom, which grants him super-human abilities in order to be a lethal vigilante. Brock attempts to reignite his career by interviewing serial killer Cletus Kasady, who becomes the host of the symbiote Carnage and escapes prison after a failed execution.—archit_a</p>
+                <a href="https://www.youtube.com/watch?v=-ezfi6FQ8Ds&ab_channel=SonyPicturesEntertainment" class="btn btn-lg btn-primary">
+                  Watch now
+                </a>
+              </div>
+            </div>
+
+            <!--Nästa och tillbaka pilar-->
+            </div>
+            <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+              <span class="sr-only">Previous</span>
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+              <span class="sr-only">Previous</span>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <!--Underrubriker med en poster på filmen samt en function tillsammans med javascript att visa trailern när man hoverar över den>
+          Finns även en volym inställning för att inte spränga öronen och lägga samma volym på alla-->
+          <div class="row">
+            <div class="column">
+              <h2>UPCOMING MOVIES</h2>
+              <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/SPIDER-MAN - NO WAY HOME - Official Trailer (HD).mp4" poster="./Pictures/spidermannowayhome.jpg">Your browser does not support the video tag.</video>
+              <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/A JOURNAL FOR JORDAN - Teaser Trailer (HD) _ Exclusively In Theaters Christmas.mp4" poster="./Pictures/ajournalforjordan.jpg">Your browser does not support the video tag.</video>
+              <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/Scream _ Official Trailer (2022 Movie).mp4" poster="./Pictures/Scream.jpg">Your browser does not support the video tag.</video>
+            </div>
+            <div class="column">
+              <h2>NEWEST RELEASE</h2>
+              <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/True Story _ Official Trailer _ Netflix.mp4" poster="./Pictures/truestory.jpg">Your browser does not support the video tag.</video>
+              <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/RED NOTICE _ Official Trailer _ Netflix.mp4" poster="./Pictures/rednotice.jpg">Your browser does not support the video tag.</video>
+              <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/Marvel Studios’ Shang-Chi and the Legend of the Ten Rings _ Official Trailer.mp4" poster="./Pictures/shangchi.jpg">Your browser does not support the video tag.</video>
+              </div>
+              <div class="column">
+                <h2>POPULAR MOVIES</h2>
+                <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/Marvel Studios’ Eternals _ Official Teaser.mp4" poster="./Pictures/eternals.jpg">Your browser does not support the video tag.</video>
+                <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/NO TIME TO DIE Trailer – In Cinemas October 2021..mp4" poster="./Pictures/notimetodie.jpg">Your browser does not support the video tag.</video>
+                <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/GHOSTBUSTERS - AFTERLIFE - Official Trailer (HD).mp4" poster="./Pictures/ghostbusters.jpg">Your browser does not support the video tag.</video>
+              </div>
+              <div class="column">
+                <h2>POPULAR SERIES</h2>
+                <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/Squid Game _ Official Trailer _ Netflix.mp4" poster="./Pictures/squidgame.jpg">Your browser does not support the video tag.</video>
+                <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/Peaky Blinders _ Official Season 6 Teaser Trailer _ Netflix.mp4" poster="./Pictures/peakyblinders.jpg">Your browser does not support the video tag.</video>
+                <video class="videoPreview" onloadstart="this.volume=0.1" src="./videos/Big Mouth _ Season 5 Official Trailer _ Netflix.mp4" poster="./Pictures/bigmouth.jpg">Your browser does not support the video tag.</video>
+              </div>
+            </div>
+
+            <!--Enkel footer med en copyright tag och länk som leder upp till sidan-->
+            <footer class="page-footer font-small cyan darken-3">
+              <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="./page1.html"> BuffaloTime</a>
+              </div>
+            </footer>
+
+
+            <!--javascript för olika funktioner som en dropdown menu för responsive navbar-->
+        <script src="./script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
